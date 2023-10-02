@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 class Person{
 	String name;
 	String tel;
-	String adress;
+	String address;
 	public String getName() {
 		return name;
 	}
@@ -26,14 +26,27 @@ class Person{
 
 
 	public String getAdress() {
-		return adress;
+		return address;
 	}
 	public void setAdress(String Adress) {
-		this.Adress = adress;
+		this.address = address;
 	}
+	
+	public Person(String name, String tel, String address) {
+		super();
+		this.name= name;
+		this.tel = tel;
+		this.address = address;	
+		
+	}
+	
 }
 public class InputManagementSystem extends JFrame {
-	public InputManagementSystem{
+	ArrayList<Person> list = new ArrayList<>();
+	private JPanel contentPane;
+	private JTextField textField;
+	private JTextField textField_;
+	
 		
 		
 		
